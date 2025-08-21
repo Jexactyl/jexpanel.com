@@ -6,6 +6,7 @@ import ThemePng from './assets/theme.png';
 import ConsolePng from './assets/console.png';
 import { HiOutlineCurrencyEuro, HiOutlineHeart, HiOutlinePaintBrush, HiOutlinePuzzlePiece, HiOutlineReceiptPercent, HiOutlineStar, HiOutlineUsers } from 'solid-icons/hi';
 import ComparisonTable from "./elements/ComparisonTable";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const words = ["users", "billing", "deployment", "payments", "tickets", "servers", "games"];
@@ -61,6 +62,7 @@ function App() {
 
   return (
     <div class={'bg-slate-950'}>
+      <Analytics />
       <div class="relative h-[90vh]">
         <div class="absolute inset-0">
           <div class="relative h-full w-full bg-slate-950 [&>div]:absolute [&>div]:inset-0 [&>div]:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [&>div]:bg-[size:14px_24px] [&>div]:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
