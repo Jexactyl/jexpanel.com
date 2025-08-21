@@ -95,7 +95,7 @@ function App() {
                 <a href={'https://github.com/jexactyl/jexactyl'} class="rounded-lg border px-4 py-2 font-medium border-slate-700 bg-slate-800 text-white hover:bg-slate-700">
                   <HiOutlineStar class={'inline-flex mb-1 mr-1'} /> Star on GitHub
                 </a>
-                <a href={'https://github.com/jexactyl/jexactyl'} class="rounded-lg border px-4 py-2 font-medium border-slate-700 bg-blue-800 text-white hover:bg-slate-700">
+                <a href={'https://discord.gg/qttGR4Z5Pk'} class="rounded-lg border px-4 py-2 font-medium border-slate-700 bg-blue-800 text-white hover:bg-slate-700">
                   <HiOutlineUsers class={'inline-flex mb-1 mr-1'} /> Join our Discord
                 </a>
               </div>
