@@ -5,6 +5,7 @@ import BillingPng from './assets/billing.png';
 import ThemePng from './assets/theme.png';
 import ConsolePng from './assets/console.png';
 import { HiOutlineCurrencyEuro, HiOutlineHeart, HiOutlinePaintBrush, HiOutlinePuzzlePiece, HiOutlineReceiptPercent, HiOutlineStar, HiOutlineUsers } from 'solid-icons/hi';
+import ComparisonTable from "./elements/ComparisonTable";
 
 function App() {
   const words = ["users", "billing", "deployment", "payments", "tickets", "servers", "games"];
@@ -203,6 +204,13 @@ function App() {
           description={'Jex features a thorough, secure and powerful billing system which can be used to handle new and renewing servers on a monthly basis.'}
         />
         <div class={'bg-slate-950'}>
+
+          <div class="mx-auto max-w-4xl lg:text-center">
+            <h2 class="text-base/7 font-semibold text-green-400">Compare Jex</h2>
+            <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">What&apos;s in it for you</p>
+            <p class="mt-4 text-lg/8 text-gray-300">Check our comparison table to see the differences between Jex Panel and the competition.</p>
+          </div>
+          <ComparisonTable />
           <div class="mx-auto max-w-7xl py-24 sm:px-6 lg:px-8">
             <div class="relative isolate overflow-hidden bg-slate-900 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
               <svg viewBox="0 0 1024 1024" aria-hidden="true" class="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0">
