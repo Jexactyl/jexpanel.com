@@ -6,7 +6,7 @@ import ThemePng from './assets/theme.png';
 import ConsolePng from './assets/console.png';
 import { HiOutlineCurrencyEuro, HiOutlineHeart, HiOutlinePaintBrush, HiOutlinePuzzlePiece, HiOutlineReceiptPercent, HiOutlineStar, HiOutlineUsers } from 'solid-icons/hi';
 import ComparisonTable from "./elements/ComparisonTable";
-import { Analytics } from "@vercel/analytics/next"
+import VersionDialog from "./elements/VersionDialog";
 
 function App() {
   const words = ["users", "billing", "deployment", "payments", "tickets", "servers", "games"];
@@ -62,7 +62,6 @@ function App() {
 
   return (
     <div class={'bg-slate-950'}>
-      <Analytics />
       <div class="relative h-[90vh]">
         <div class="absolute inset-0">
           <div class="relative h-full w-full bg-slate-950 [&>div]:absolute [&>div]:inset-0 [&>div]:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [&>div]:bg-[size:14px_24px] [&>div]:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
@@ -91,9 +90,7 @@ function App() {
                 Designed based on the Pterodactyl Project.
               </p>
               <div class="flex gap-4">
-                <a href={'https://docs.jexactyl.com'} class="rounded-lg px-4 py-2 font-medium bg-green-400 text-slate-900 hover:bg-green-300">
-                  Get Started
-                </a>
+                <VersionDialog />
                 <a href={'https://github.com/jexactyl/jexactyl'} class="rounded-lg border px-4 py-2 font-medium border-slate-700 bg-slate-800 text-white hover:bg-slate-700">
                   <HiOutlineStar class={'inline-flex mb-1 mr-1'} /> Star on GitHub
                 </a>
