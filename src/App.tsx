@@ -75,7 +75,7 @@ function App() {
               <div class="w-3/4 p-3 mb-4 text-xs rounded-lg bg-gray-800/50 flex justify-between">
                 <div><span class="text-green-400 font-bold mr-1">New Release</span> <code>v4.0.0-rc1</code> is now available.</div>
 
-                <a href={'https://docs.jexactyl.com'} class={'text-blue-500'}>Learn More {'>'}</a>
+                <a href={'https://github.com/jexactyl/jexactyl/releases/v4.0.0-rc1'} class={'text-blue-500'}>Learn More {'>'}</a>
               </div>
               <h1 class="mb-4 text-2xl font-bold tracking-tight sm:text-3xl lg:text-5xl text-white">
                 Jex handles your
@@ -225,7 +225,7 @@ function App() {
                 <h2 class="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Boost your sales, service and performance with Jex.</h2>
                 <p class="mt-6 text-lg/8 text-pretty text-gray-300">Follow our documentation to get Jex installed in under 15 minutes, with optional migration of your data.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                  <a href="https://docs.jexactyl.com" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"> Get started </a>
+                  <a href="https://docs.jexpanel.com" class="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"> Get started </a>
                 </div>
               </div>
               <div class="relative mt-16 h-80 lg:mt-8">
@@ -246,10 +246,10 @@ function App() {
                 <a href="https://discord.gg/qttGR4Z5Pk" class="hover:underline me-4 md:me-6">Discord</a>
               </li>
               <li>
-                <a href="https://docs.jexactyl.com" class="hover:underline me-4 md:me-6">Documentation</a>
+                <a href="https://docs.jexpanel.com" class="hover:underline me-4 md:me-6">Docs</a>
               </li>
               <li>
-                <a href="mailto:mail@cameronwhite.co.uk" class="hover:underline">Contact</a>
+                <a href="mailto:cam@jexpanel.com" class="hover:underline">Contact</a>
               </li>
             </ul>
           </div>
