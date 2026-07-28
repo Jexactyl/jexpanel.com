@@ -200,6 +200,21 @@ preflight() {
         exit 1
     fi
 
+    # Support `curl ... | bash` style invocation: when piped in like that, this
+    # script's stdin is the pipe carrying its own source, not the terminal, so
+    # every `read` prompt below would hit EOF instantly and fail. Re-point
+    # stdin at the controlling terminal so the interactive questions still work.
+    if [[ ! -t 0 ]]; then
+        if [[ -r /dev/tty ]]; then
+            exec < /dev/tty
+        else
+            err "This installer needs an interactive terminal to ask a few configuration questions (domain, SSL, admin credentials)."
+            err "No terminal is attached to this session (e.g. a non-interactive CI job, or 'ssh host cmd' without -t)."
+            err "Run it from an interactive shell/SSH session instead, e.g.: curl -fsSL <url> -o install.sh && bash install.sh"
+            exit 1
+        fi
+    fi
+
     mkdir -p "$(dirname "$LOG_FILE")"
     : >"$LOG_FILE"
     chmod 600 "$LOG_FILE"
