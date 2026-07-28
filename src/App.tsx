@@ -7,6 +7,7 @@ import ConsolePng from './assets/console.png';
 import { HiOutlineCurrencyEuro, HiOutlineHeart, HiOutlinePaintBrush, HiOutlinePuzzlePiece, HiOutlineReceiptPercent, HiOutlineStar, HiOutlineUsers } from 'solid-icons/hi';
 import ComparisonTable from "./elements/ComparisonTable";
 import VersionDialog from "./elements/VersionDialog";
+import GetStarted from "./elements/GetStarted";
 
 function App() {
   const words = ["users", "billing", "deployment", "payments", "tickets", "servers", "games"];
@@ -98,6 +99,7 @@ function App() {
                   <HiOutlineUsers class={'inline-flex mb-1 mr-1'} /> Join our Discord
                 </a>
               </div>
+              <GetStarted />
             </div>
           </div>
 
