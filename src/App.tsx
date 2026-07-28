@@ -63,17 +63,17 @@ function App() {
 
   return (
     <div class={'bg-slate-950'}>
-      <div class="relative h-[90vh]">
+      <div class="relative min-h-screen lg:h-[90vh]">
         <div class="absolute inset-0">
           <div class="relative h-full w-full bg-slate-950 [&>div]:absolute [&>div]:inset-0 [&>div]:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [&>div]:bg-[size:14px_24px] [&>div]:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
             <div></div>
           </div>
         </div>
-        <div class={'text-white flex h-full lg:grid lg:grid-cols-2 px-4 lg:px-[10%]'}>
+        <div class={'text-white flex flex-col justify-center py-24 lg:h-full lg:grid lg:grid-cols-2 lg:py-0 px-4 lg:px-[10%]'}>
           {/* Left side */}
           <div class="relative z-10 flex items-center px-4">
             <div class="max-w-5xl">
-              <div class="w-3/4 p-3 mb-4 text-xs rounded-lg bg-gray-800/50 flex justify-between">
+              <div class="w-full sm:w-3/4 p-3 mb-4 text-xs rounded-lg bg-gray-800/50 flex flex-col sm:flex-row gap-2 sm:gap-0 sm:justify-between">
                 <div><span class="text-green-400 font-bold mr-1">New Release</span> <code>v4.0.0-rc1</code> is now available.</div>
 
                 <a href={'https://github.com/jexactyl/jexactyl/releases/v4.0.0-rc1'} class={'text-blue-500'}>Learn More {'>'}</a>
@@ -90,7 +90,7 @@ function App() {
                 capture payments. All in one quick, customizable and beautiful UI which takes minutes to configure.
                 Designed based on the Pterodactyl Project.
               </p>
-              <div class="flex gap-4">
+              <div class="flex flex-wrap gap-4">
                 <VersionDialog />
                 <a href={'https://github.com/jexactyl/jexactyl'} class="rounded-lg border px-4 py-2 font-medium border-slate-700 bg-slate-800 text-white hover:bg-slate-700">
                   <HiOutlineStar class={'inline-flex mb-1 mr-1'} /> Star on GitHub
@@ -108,6 +108,7 @@ function App() {
             <Carousel />
           </div>
         </div>
+      </div>
         <div class={'bg-slate-950 py-16 lg:py-0'}>
           <div class="mx-auto px-6 lg:px-8">
             <div class="mx-auto max-w-4xl lg:text-center">
@@ -256,8 +257,6 @@ function App() {
             </ul>
           </div>
         </div>
-      </div>
-
 
     </div>
   )
