@@ -8,6 +8,7 @@ import { HiOutlineCurrencyEuro, HiOutlineHeart, HiOutlinePaintBrush, HiOutlinePu
 import ComparisonTable from "./elements/ComparisonTable";
 import VersionDialog from "./elements/VersionDialog";
 import GetStarted from "./elements/GetStarted";
+import FalconBanner from "./elements/FalconBanner";
 
 function App() {
   const words = ["users", "billing", "deployment", "payments", "tickets", "servers", "games"];
@@ -213,6 +214,9 @@ function App() {
             <p class="mt-4 text-lg/8 text-gray-300">Check our comparison table to see the differences between Jex Panel and the competition.</p>
           </div>
           <ComparisonTable />
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <FalconBanner />
+          </div>
           <div class="mx-auto max-w-7xl py-24 sm:px-6 lg:px-8">
             <div class="relative isolate overflow-hidden bg-slate-900 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
               <svg viewBox="0 0 1024 1024" aria-hidden="true" class="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0">

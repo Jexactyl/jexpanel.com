@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  /* Used by the Falcon Hosting partner banner (matches their branding) */
+  --font-falcon: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
   --color-corvu-text: #180f24;
   --color-corvu-bg: #f3f1fe;
   --color-corvu-100: #e6e2fd;
