@@ -38,7 +38,7 @@ function GetStarted() {
         title="Copy to clipboard"
         class="group flex w-full items-center justify-between gap-4 rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-left transition hover:border-green-400/60 hover:bg-slate-800"
       >
-        <code class="overflow-x-auto font-mono text-sm text-green-400 whitespace-nowrap">
+        <code class="min-w-0 overflow-x-auto font-mono text-sm text-green-400 whitespace-nowrap">
           <span class="mr-2 select-none text-slate-500">$</span>
           {INSTALL_COMMAND}
         </code>

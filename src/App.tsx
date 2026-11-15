@@ -64,16 +64,16 @@ function App() {
 
   return (
     <div class={'bg-slate-950'}>
-      <div class="relative min-h-screen lg:h-[90vh]">
+      <div class="relative lg:h-[90vh]">
         <div class="absolute inset-0">
           <div class="relative h-full w-full bg-slate-950 [&>div]:absolute [&>div]:inset-0 [&>div]:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [&>div]:bg-[size:14px_24px] [&>div]:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
             <div></div>
           </div>
         </div>
-        <div class={'text-white flex flex-col justify-center py-24 lg:h-full lg:grid lg:grid-cols-2 lg:py-0 px-4 lg:px-[10%]'}>
+        <div class={'text-white flex flex-col justify-center pt-20 pb-8 sm:py-24 lg:h-full lg:grid lg:grid-cols-2 lg:py-0 px-4 lg:px-[10%]'}>
           {/* Left side */}
-          <div class="relative z-10 flex items-center px-4">
-            <div class="max-w-5xl">
+          <div class="relative z-10 flex min-w-0 items-center px-4">
+            <div class="w-full min-w-0 max-w-5xl">
               <div class="w-full sm:w-3/4 p-3 mb-4 text-xs rounded-lg bg-gray-800/50 flex flex-col sm:flex-row gap-2 sm:gap-0 sm:justify-between">
                 <div><span class="text-green-400 font-bold mr-1">New Release</span> <code>v4.0.0-rc1</code> is now available.</div>
 
@@ -208,7 +208,7 @@ function App() {
         />
         <div class={'bg-slate-950'}>
 
-          <div class="mx-auto max-w-4xl lg:text-center">
+          <div class="mx-auto max-w-4xl px-6 lg:px-8 lg:text-center">
             <h2 class="text-base/7 font-semibold text-green-400">Compare Jex</h2>
             <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">What&apos;s in it for you</p>
             <p class="mt-4 text-lg/8 text-gray-300">Check our comparison table to see the differences between Jex Panel and the competition.</p>

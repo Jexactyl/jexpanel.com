@@ -40,7 +40,7 @@ function Feature({ tag, title, description, image, subfeatures }: FeatureProps) 
                             </dl>
                         </div>
                     </div>
-                    <img src={image} class="w-3xl max-w-none rounded-xl shadow-xl sm:w-228" />
+                    <img src={image} class="w-full rounded-xl shadow-xl lg:w-228 lg:max-w-none" />
                 </div>
             </div>
         </div>
